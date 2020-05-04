@@ -1,0 +1,331 @@
+/* 
+    Created on : 23-mar-2020, 1:24:52
+    Author     : srestrepo
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #ededed;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3);
+}
+
+.header .logo {
+    width: 150px;
+    height: auto;
+    padding-right: 30px;
+    border-right: 2px solid #737576;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .logo img {
+    width: 100%;
+}
+
+.header .title {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 10px;
+} 
+
+.header .title h2 {
+    color: #052D6F;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.header .title h2 span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.wrap {
+    background-color: #ededed;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 150px 30px 30px 30px;
+}
+
+.wrap.bg-img {
+    padding: 100px 0px 0px 0px;
+}
+
+.wrap .home-content {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    background-image: url("../Imagenes/Hipodromo3.png");
+    background-position: 100% 100%;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    text-align: center;
+}
+
+.wrap .home-content h1 {
+    padding-top: 30px;
+}
+
+.wrap .home-content a.btn {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ff9800;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.wrap .home-content a.btn:hover {
+    color: #fff;
+    background-color: #052D6F;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3);
+    transition: all .2s ease-out;
+}
+
+.wrap .content-form {
+    padding: 0 30px;
+}
+
+.content-form form fieldset {
+    padding: 20px 30px;
+    border: 1px solid #737576;
+}
+
+fieldset legend {
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #737576;
+}
+
+form fieldset .form-group {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 16px;
+}
+
+form .form-group.md-4 {
+    width: 33%;
+}
+
+form fieldset .form-group label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #052D6F;
+    display: block;
+    margin-bottom: 10px;
+}
+
+form .form-group input,
+form .form-group select {
+    width: 100%;
+    height: 34px;
+    color: #737576;
+    font-weight: lighter;
+    padding-left: 15px;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 16px;
+    border: 1px solid #737576;
+    box-sizing: border-box;
+}
+
+form .form-group input:read-only {
+    outline: none;
+    background-color: #dedede;
+    cursor: auto;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+    border-color: rgba(7, 100, 255, 1);
+    outline: none;
+    box-shadow: 0 0 5px 0 rgba(7, 100, 255, .5);
+}
+
+.content-form form .btn-group {
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.btn-group input[type="submit"],
+.btn-group .btn-send{
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: 1px solid #052D6F;
+    outline: none;
+    box-shadow: none;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #fff;
+    background-color: #052D6F;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all .2s ease;
+}
+
+.btn-group input[type="submit"]:hover {
+    background-color: #fff;
+    color: #052D6F;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3);
+    transition: all .2s ease;
+}
+
+.btn-group input[type="submit"]:disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.content-players {
+    padding: 30px;
+}
+
+.content-players .flex-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.content-players h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #052D6F;
+    margin-bottom: 30px;
+}
+
+.content-players form .flex-content{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.content-players table.players-table {
+    width: 100%;
+}
+
+.content-players .flex-content table.players-table {
+    width: calc(100% / 2);
+}
+
+.content-players .btn-group {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+table.players-table thead tr th {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #737576;
+    padding: 5px 10px;
+    border-bottom: 1px solid #737576;
+}
+
+table.players-table tbody tr:nth-child(even) td {
+    background-color: #dedede;
+}
+
+table.players-table tbody tr td {
+    font-size: 16px;
+    padding: 5px 10px;
+    color: #052D6F;
+    height: 44px;
+}
+
+table.players-table tbody tr td input {
+    width: 100%;
+    height: 34px;
+    color: #737576;
+    font-weight: lighter;
+    padding-left: 15px;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 16px;
+    border: 1px solid #737576;
+    box-sizing: border-box;
+}
+
+.content-players ul.list-items {
+    list-style-type: none;
+    counter-reset: step;
+    display: flex;
+    width: 70%;
+    margin: 30px auto;
+}
+
+.content-players ul.list-items li {
+    position: relative;
+    width: calc(100% / 4 - 25px);
+    margin-left: 25px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3);
+    border-radius: 100px 5px 5px 100px;
+}
+
+.content-players ul.list-items li:first-child {
+    margin-left: 0;
+}
+
+.content-players ul.list-items li .item {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 0 20px 80px;
+    color: #737576;
+    font-weight: 800;
+}
+
+.content-players ul.list-items li .item:before {
+    content: counter(step);
+    counter-increment: step;
+    font-size: 20px;
+    background-color: #052D6F;
+    color: #fff;
+    width: 60px;
+    height: 62px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+}
